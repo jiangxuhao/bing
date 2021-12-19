@@ -21,7 +21,7 @@ jobs:
           destination-repo: git@gitee.com:jxh_2017/bing.git
 
       - name: Build Gitee Pages
-        uses: piupiupiu/bing_dailywallpaper@master
+        uses: jxh_2017/bing@master
         with:
           # 注意替换为你的 Gitee 用户名
           gitee-username: jxh_2017
