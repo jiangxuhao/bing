@@ -15,6 +15,7 @@ jobs:
           # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
         with:
+          branch: main
           # 注意替换为你的 GitHub 源仓库地址
           source-repo: git@github.com:jiangxuhao/bing.git
           # 注意替换为你的 Gitee 目标仓库地址
