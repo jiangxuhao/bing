@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Sync to Gitee
-        uses: jiangxuhao/git-mirror-action@main
+        uses: jiangxuhao/bing@main
         env:
           # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
@@ -21,7 +21,7 @@ jobs:
           destination-repo: git@gitee.com:jxh_2017/bing.git
 
       - name: Build Gitee Pages
-        uses: jxh_2017/gitee-pages-action@master
+        uses: piupiupiu/bing_dailywallpaper@master
         with:
           # 注意替换为你的 Gitee 用户名
           gitee-username: jxh_2017
