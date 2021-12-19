@@ -2,7 +2,7 @@ name: Sync
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Sync to Gitee
-        uses: jiangxuhao/git-mirror-action@master
+        uses: jiangxuhao/git-mirror-action@main
         env:
           # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
